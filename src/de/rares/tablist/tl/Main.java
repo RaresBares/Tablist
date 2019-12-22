@@ -38,7 +38,7 @@ public class Main extends JavaPlugin implements Listener {
         }
         pl.saveConfig();
         try {
-            sendTablistHeaderAndFooter(e.getPlayer(),
+            sendTablist(e.getPlayer(),
                     cfg.get("ts.header").toString().replace("&","§"), cfg.get("ts.footer").toString().replace("&","§"));
         } catch (IllegalAccessException e1) {
             e1.printStackTrace();
@@ -47,7 +47,7 @@ public class Main extends JavaPlugin implements Listener {
         }
     }
 
-    public void sendTablistHeaderAndFooter(Player p, String header, String footer) throws IllegalAccessException, NoSuchFieldException {
+    public void sendTablist(Player p, String header, String footer) throws IllegalAccessException, NoSuchFieldException {
 
 
         IChatBaseComponent tabHeader = ChatSerializer.a("{\"text\":\"" + header + "\"}");
