@@ -1,4 +1,4 @@
-main: Main
-name: meme
-author: me
-version: 1.0
+main: de.rares.tablist.tl.Main
+name: Tablist
+author: Rares
+version: 1.1
