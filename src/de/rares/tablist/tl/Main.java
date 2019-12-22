@@ -30,10 +30,10 @@ public class Main extends JavaPlugin implements Listener {
     public void onJoin(PlayerJoinEvent e) {
         FileConfiguration cfg = pl.getConfig();
 
-        if(cfg.get("tl.footer") == null){
+        if(cfg.getString("tl.footer") == null){
             cfg.set("ts.footer", "abc");
         }
-        if(cfg.get("tl.header") == null){
+        if(cfg.getString("tl.header") == null){
             cfg.set("ts.header", "abc");
         }
         pl.saveConfig();

@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Tablist:jar">
+    <output-path>$USER_HOME$/Desktop</output-path>
+    <root id="archive" name="Tablist.jar">
+      <element id="module-output" name="Tablist" />
+    </root>
+  </artifact>
+</component>
